@@ -6,7 +6,9 @@ const { dbParams } = require('../../db/params/dbParams');
 const pool = new Pool(dbParams);
 
 router.post(`/`, (req, res) => {
-  const ticker = req.body.ticker;
+  // const ticker = req.body.ticker;
+  const ticker = 'AAPL';
+
   pool
     .query(
       `
